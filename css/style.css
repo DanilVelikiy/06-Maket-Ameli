@@ -49,10 +49,30 @@
 	text-align: center;
 }
 
+.meter-mobile__title {
+	font-size: 14px;
+	text-transform: uppercase;
+	border: 2px solid white;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.meter-mobile__text {
+	display: block;
+}
+
 .meter {
 	background-color: #10c9c3;
 	padding-top: 79px;
 	padding-bottom: 87px;
+}
+
+.meter-mobile {
+	background-color: #10c9c3;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .meter_project {}
@@ -63,7 +83,7 @@
 
 .meter__envelop {
 	display: inline-block;
-	margin-left: 26px;
+	margin-left: 10px;
 }
 
 .meter__calc {
@@ -71,8 +91,12 @@
 }
 
 .meter__title {
-	font-size: 14px;
+	font-size: 12px;
 	text-transform: uppercase;
+}
+
+.about-me-mobile {
+	padding-top: 10px;
 }
 
 .about-me {
@@ -98,6 +122,15 @@
 .about-me__title {
 	color: black;
 	font-size: 30px;
+}
+
+.about-me-mobile__title {
+	color: black;
+	font-size: 30px;
+	text-align: center;
+	border: 1px solid gray;
+	border-radius: 4px;
+
 }
 
 .about-me__text {
@@ -225,7 +258,37 @@
 		line-height: 16px;
 		margin-bottom: 25px;
 	}
-
+	.meter-mobile,
+	.about-me-mobile {
+		display: block;
+	}
+	.meter,
+	.about-me {
+		display: none;
+	}
+	.offering {
+		margin-bottom: 10px;
+	}
+	.offering__title {
+		margin-top: 10px;
+	}
+	.footer {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.footer__our-posessor-title {
+		font-size: 14px;
+	}
+	.footer__our-activities {
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}
+	.footer__our-contact {
+		margin-left: 0px;
+	}
+	.footer__categories {
+		font-size: 12px;
+	}
 }
 
 /* Устроства с маленьким экраном (планшеты, 768px и выше) */
@@ -250,15 +313,30 @@
 		padding-left: 31px;
 	}
 	.greeting__title {
-		font-size: 38px;
+		font-size: 28px;
 		line-height: 0px;
-		padding-top: 0px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	.greeting__subtitles {
 		display: none;
 		font-size: 12px;
 		line-height: 16px;
 		margin-bottom: 25px;
+	}
+	.meter-mobile,
+	.about-me-mobile {
+		display: none;
+	}
+	.meter,
+	.about-me {
+		display: block;
+	}
+	.footer__our-contact {
+		margin-left: -70px;
+	}
+	.footer__our-activities {
+		margin-left: -50px;
 	}
 }
 
@@ -294,7 +372,17 @@
 		line-height: 20px;
 		margin-bottom: 50px;
 	}
+	.meter-mobile,
+	.about-me-mobile {
+		display: none;
+	}
+	.meter,
+	.about-me {
+		display: block;
+	}
+	.footer__categories {
 
+	}
 }
 
 /* Устройства с большим экраном (компьютеры, 1200px и выше) */
@@ -334,5 +422,14 @@
 		font-size: 18px;
 		line-height: 28px;
 		margin-bottom: 110px;
+	}
+	.meter-mobile,
+	.about-me-mobile {
+		display: none;
+	}
+
+	.meter,
+	.about-me {
+		display: block;
 	}
 }
