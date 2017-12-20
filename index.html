@@ -3,11 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Animal</title>
+	<title>Amelie</title>
 	<!--JQuery-->
-	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css">
 	<!--bootstrap-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!--бустрап мобайл фёрст-->
@@ -20,6 +21,19 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!--bootstrap-->
 	<script src="js/bootstrap.min.js"></script>
+	<!--скрипт Jquery UI Accordeon -->
+	<script>
+		$(function() {
+			$("#accordion__meter").accordion({
+				collapsible: true
+			});
+		});
+		$(function() {
+			$("#accordion__about-me-mobile").accordion({
+				collapsible: true
+			});
+		});
+	</script>
 </head>
 
 <body class="b-body">
@@ -64,7 +78,49 @@
 			</div>
 		</div>
 	</section>
-	<!--счётчики-->
+	<!--счётчики для мобильной версии-->
+	<div class="meter-mobile">
+		<div class="container">
+			<div id="accordion__meter">
+				<h3 class="meter-mobile__title">Meter's</h3>
+				<div>
+					<!--первый мобильный счётчик-->
+					<div class="meter-mobile__text meter_project col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<i class="fa fa-briefcase fa-2x meter__icon" aria-hidden="true"></i>
+						<div class="meter__envelop">
+							<h3 class="meter__calc">548</h3>
+							<h4 class="meter__title">project completed</h4>
+						</div>
+					</div>
+					<!--второй мобильный счётчик-->
+					<div class="meter-mobile__text meter_project col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<i class="fa fa-clock-o fa-2x meter__icon" aria-hidden="true"></i>
+						<div class="meter__envelop">
+							<h3 class="meter__calc">1645</h3>
+							<h4 class="meter__title">working hours</h4>
+						</div>
+					</div>
+					<!--третий мобильный счётчик-->
+					<div class="meter-mobile__text meter_project col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<i class="fa fa-star-o fa-2x meter__icon" aria-hidden="true"></i>
+						<div class="meter__envelop">
+							<h3 class="meter__calc">612</h3>
+							<h4 class="meter__title">positive feedback</h4>
+						</div>
+					</div>
+					<!--четвёртый мобильный счётчик-->
+					<div class="meter-mobile__text meter_project col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<i class="fa fa-heart-o fa-2x meter__icon" aria-hidden="true"></i>
+						<div class="meter__envelop">
+							<h3 class="meter__calc">735</h3>
+							<h4 class="meter__title">happy clients</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--счётчики для больших разрешений-->
 	<section class="meter">
 		<div class="container">
 			<div class="row">
@@ -103,7 +159,20 @@
 			</div>
 		</div>
 	</section>
-	<!--блок о нас-->
+	<!--блок о нас для маленьких экранов смартфонов-->
+	<section class="about-me-mobile">
+		<div class="container">
+			<div id="accordion__about-me-mobile">
+				<h3 class="about-me-mobile__title">About me</h3>
+				<div>
+					<img src="img/about-me__image.jpg" alt="about-me__image" class="about-me__image">
+					<p class="about-me__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio reiciendis consectetur error doloribus officia, quo explicabo nobis assumenda qui expedita ea dicta. Vero <br><br> sunt eum porro, totam ipsum, molestiae beatae! Distinctio reiciendis consectetur error</p>
+					<img src="img/about-me__signature.jpg" alt="about-me__signature" class="about-me__signature">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--блок о нас для средних и больших экранов-->
 	<section class="about-me">
 		<div class="container">
 			<div class="row">
@@ -138,31 +207,31 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-sm-3 footer__our-posessor">
+				<div class="col-lg-3 col-sm-3 col-xs-12 footer__our-posessor">
 					<h5 class="footer__our-posessor-title">Piroll Design, Inc</h5>
 					<div class="footer__categories">
 						&copy; 2017 Pirell All right reserved <br> Designed by robirurk
 					</div>
 				</div>
-				<div class="col-lg-1 col-sm-1"></div>
-				<div class="col-lg-4 col-sm-4 footer__our-contact">
+				<div class="col-lg-1 col-sm-1 col-xs-0"></div>
+				<div class="col-lg-4 col-sm-4 col-xs-6 footer__our-contact">
 					<div class="footer__categories">
 						hello@pirolltheme.com <br> +44 987 065 908
 					</div>
 				</div>
-				<div class="col-lg-1 col-sm-1 footer__our-activities">
+				<div class="col-lg-1 col-sm-1 col-xs-6 footer__our-activities">
 					<div class="footer__categories">Project</div>
 					<div class="footer__categories">About</div>
 					<div class="footer__categories">Service</div>
 					<div class="footer__categories">Carreer</div>
 				</div>
-				<div class="col-lg-2 col-sm-2 footer__our-events">
+				<div class="col-lg-2 col-sm-2 col-xs-6 footer__our-events">
 					<div class="footer__categories">News</div>
 					<div class="footer__categories">Events</div>
 					<div class="footer__categories">Contacts</div>
 					<div class="footer__categories">Legals</div>
 				</div>
-				<div class="col-lg-1 col-sm-1 footer__our-social">
+				<div class="col-lg-1 col-sm-1 col-xs-6 footer__our-social">
 					<div class="footer__categories">Facebook</div>
 					<div class="footer__categories">Twitter</div>
 					<div class="footer__categories">Instagram</div>
